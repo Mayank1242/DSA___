@@ -3,7 +3,7 @@ package greedy;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Activity_Selction_Problem {
+public class P1_Activity_Selction_Problem {
 
 	public static void main(String args[]) {
 		int n=6;
