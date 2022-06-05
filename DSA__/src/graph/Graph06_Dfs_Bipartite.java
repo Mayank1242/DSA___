@@ -3,7 +3,7 @@ package graph;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Graph06_Dfs_Bipirate {
+public class Graph06_Dfs_Bipartite {
 	
 public static boolean check_Bipartie(int node, ArrayList<ArrayList<Integer>> adj,int colour[]) {
 	

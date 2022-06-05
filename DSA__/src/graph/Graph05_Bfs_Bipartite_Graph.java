@@ -1,7 +1,7 @@
 package graph;
 
 import java.util.*;
-public class Graph05_Bfs_Bipirate_Graph {
+public class Graph05_Bfs_Bipartite_Graph {
 	
 	
  static boolean bfscheck(int node,ArrayList<ArrayList<Integer>> adj,int colour[]) {
@@ -82,7 +82,7 @@ public static void main(String args[]) {
 		addedgege(adj,sourse,destination);
 	}
 	
-	if(Graph05_Bfs_Bipirate_Graph.check_colour(adj, v)==true) {
+	if(Graph05_Bfs_Bipartite_Graph.check_colour(adj, v)==true) {
 		System.out.println("Not Bipirite!!");
 	}else {
 		System.out.println("Yes Bipirite!! ");
