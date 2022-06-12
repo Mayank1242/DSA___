@@ -14,14 +14,35 @@ public static void addedege(ArrayList<ArrayList<Integer>> adj, int sourse,int de
 	
 	
 public static void main(String args[]) {
-Integer arr[]= {3,4,5,4,4};
-//ArrayList<Integer> list=new ArrayList<Integer>();
-//Collections.addAll(list,arr);
-List lt=Arrays.asList(arr);
-//for(int it:arr) {
-//	list.add(it);
+int arr[]= {3,4,5,4,4};
+
+ArrayList<Integer> list=new ArrayList<Integer>();
+for (int i : arr) {
+    list.add(i);
+}
+Collections.sort(list);
+//System.out.println(list);
+
+//ListIterator<Integer> listItr2 = list.listIterator(list.size());
+//while(listItr2.hasPrevious())
+//{
+//    int ele = listItr2.previous();
+//    System.out.println(ele);
 //}
-Collections.sort(lt);
-System.out.println();
+for(int i=0;i<list.size();i++) {
+	System.out.print(list.get(i)+" ");
+}
+//Collections.addAll(list,arr);
+////List lt=Arrays.asList(arr);
+//////for(int it:arr) {
+//////	list.add(it);
+//////}
+//Collections.sort(lt);
+
+//
+//for(int i=0;i<list.size();i++) {
+//	System.out.println(list.get(i));
+//	
+
 }	
 }
