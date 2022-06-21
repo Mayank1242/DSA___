@@ -48,12 +48,12 @@ public static void addedgege( ArrayList<ArrayList<Integer>> adj,int sourse,int d
 public static void main(String args[]) {
 	
 	Scanner sc=new Scanner(System.in);
-	System.out.println("Enter the vertices and edeges:");
+//	System.out.println("Enter the vertices and edeges:");
 	int v=sc.nextInt();
 	int e=sc.nextInt();
 	ArrayList<ArrayList<Integer>> adj=new ArrayList<>();
 	
-	for(int i=0;i<v;i++) {
+	for(int i=1;i<=v;i++) {
 		adj.add(new ArrayList<Integer>());
 	}
 	
@@ -66,6 +66,16 @@ public static void main(String args[]) {
 //	4 5
 //	5 6
 //	6 7
+	
+//	1 2
+//	1 3
+//	2 3
+//	2 4
+//	2 5
+//	3 4
+//	4 5 
+	
+
 	
 	//Not bipartite
 //	1 2

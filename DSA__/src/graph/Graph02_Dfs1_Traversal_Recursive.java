@@ -17,7 +17,7 @@ public static ArrayList<Integer> dfs(int v,ArrayList<ArrayList<Integer>> adj) {
 	ArrayList<Integer> store=new ArrayList<>();
 	boolean vis[]=new boolean[v+1];
 	
-	for(int i=1;i<=v;i++) {
+	for(int i=0;i<v;i++) {
 		if(vis[i]==false) {
 		Dfs_recursive(i,vis,adj,store);
 		}
@@ -39,12 +39,12 @@ public static ArrayList<Integer> dfs(int v,ArrayList<ArrayList<Integer>> adj) {
 //		2 7
 //		7 5
 //		4 6
-		int v=7;
-		int e=6;
+		int v=4;
+		int e=4;
 		Scanner sc=new Scanner(System.in);
 		ArrayList<ArrayList<Integer>> adj=new ArrayList<>();
 		
-		for(int i=1;i<=v+1;i++) {
+		for(int i=0;i<=v;i++) {
 			adj.add(new ArrayList<Integer>());
 		}
 		

@@ -47,11 +47,11 @@ public class Graph01_Bfs_Traversal {
 //		2 7
 //		7 5
 //		4 6
-		int v=4;
-		int e=4;
+		int v=5;
+		int e=5;
 		ArrayList<ArrayList<Integer>> adj=new ArrayList<>();
 		Scanner sc=new Scanner(System.in);
-		for(int i=1;i<=v+1;i++) {
+		for(int i=0;i<=v;i++) {
 			adj.add(new ArrayList<Integer>());
 		}
 		

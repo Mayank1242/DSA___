@@ -1,5 +1,4 @@
 package graph;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 class Node 
@@ -14,9 +13,10 @@ class Node
     int getV() { return v; }
     int getWeight() { return weight; }
 }
+
 public class Graph14_Prims_Algo_For_Mst {
 
-	
+    
 public static void prims_algo(ArrayList<ArrayList<Node>> adj,int v,int src) {
 	int weight[]=new int[v];
 	int parent[]=new int[v];
@@ -111,5 +111,6 @@ public static void main(String args[]) {
 		
 		
 		prims_algo(adj, v, 0);
+//		prims(0, adj, v);
 	}
 }

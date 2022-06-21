@@ -38,8 +38,8 @@ public static void addedgege( ArrayList<ArrayList<Integer>> adj,int sourse,int d
 		
 }
 public static void main(String args[]) {
-		int v=3;
-		int e=2;
+		int v=5;
+		int e=7;
 		Scanner sc=new Scanner(System.in);
 		ArrayList<ArrayList<Integer>> adj=new ArrayList<>();
 		

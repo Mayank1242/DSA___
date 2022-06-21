@@ -28,19 +28,20 @@ public static boolean check_Bipartie(int node, ArrayList<ArrayList<Integer>> adj
 	
 	return false;
 }
-public static boolean check_colour( ArrayList<ArrayList<Integer>> adj,int v) {
+
+public static boolean check_colour(ArrayList<ArrayList<Integer>> adj,int v) {
 	int colour[]=new int[v+1];
 	for(int i=0;i<v;i++) {
 		colour[i]=-1;
 	}
-	for(int i=1;i<=v;i++) {
+	for(int i=0;i<=v;i++) {
 		if(colour[i]==-1) {
-			if(check_Bipartie(i,adj,colour)) {
-				return true;
+			if(!check_Bipartie(i,adj,colour)) {
+				return false;
 			}
 		}
 	}
-	return false;
+	return true;
 }
 	
 public static void addedgege( ArrayList<ArrayList<Integer>> adj,int sourse,int dest) {
@@ -48,6 +49,7 @@ public static void addedgege( ArrayList<ArrayList<Integer>> adj,int sourse,int d
 		adj.get(dest).add(sourse);
 		
 }
+
 public static void main(String args[]) {
 //	1 2
 //	2 3
@@ -57,8 +59,8 @@ public static void main(String args[]) {
 //	6 5
 //	4 5
 //	5 8
-		int v=8;
-		int e=8;
+		int v=3;
+		int e=3;
 		Scanner sc=new Scanner(System.in);
 		ArrayList<ArrayList<Integer>> adj=new ArrayList<>();
 		
@@ -72,6 +74,7 @@ public static void main(String args[]) {
 			int destination=sc.nextInt();
 			addedgege(adj,sourse,destination);
 	    }
+
 		
 		if(check_colour(adj, v)) {
 			System.out.println("Yes bipirate");

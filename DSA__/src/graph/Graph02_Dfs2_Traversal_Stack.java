@@ -54,12 +54,9 @@ public class Graph02_Dfs2_Traversal_Stack {
 					s = stack.peek();
 					stack.pop();
 					
-					// Stack may contain same vertex twice. So
-					// we need to print the popped item only
-					// if it is not visited.
 					if(visited.get(s) == false)
 					{
-						System.out.print(s + " ");
+						System.out.print(s + "k ");
 						visited.set(s, true);
 					}
 					
